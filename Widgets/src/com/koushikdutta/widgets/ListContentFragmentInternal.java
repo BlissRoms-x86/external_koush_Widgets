@@ -16,7 +16,6 @@
 
 package com.koushikdutta.widgets;
 
-import junit.framework.Assert;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -154,9 +153,7 @@ public class ListContentFragmentInternal extends BetterListFragmentInternal {
             FragmentTransaction ft = fa.getSupportFragmentManager().beginTransaction();
             if (isPaged()) {
                 View v = getFragment().getView();
-                Assert.assertNotNull(v);
                 final View l = v.findViewById(R.id.list_fragment);
-                Assert.assertNotNull(l);
                 l.setVisibility(View.GONE);
                 fm.addOnBackStackChangedListener(new OnBackStackChangedListener() {
                     {
