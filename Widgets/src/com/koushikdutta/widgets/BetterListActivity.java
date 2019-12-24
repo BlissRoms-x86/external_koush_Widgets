@@ -17,8 +17,8 @@
 package com.koushikdutta.widgets;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.View;
+import androidx.fragment.app.FragmentActivity;
 
 import com.koushikdutta.widgets.BetterListFragmentInternal.ActivityBaseFragmentListener;
 
